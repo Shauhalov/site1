@@ -1,0 +1,366 @@
+@font-face {
+   font-family: inter;
+   src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+   font-family: inter;
+   font-size: 16px; /* Базовый размер шрифта для масштабирования */
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   overflow-x: hidden;
+}
+
+a {
+   font-size: 1.125rem; /* 18pt в rem */
+   text-decoration: none;
+   color: #111111;
+}
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 90%; /* Совпадает с шириной subtitle и hr */
+ /* Совпадает с max-width subtitle и hr */
+   margin: 1vw auto;
+   padding: 5px 0;
+   background-color: rgba(255, 255, 255, 0.6);
+   backdrop-filter: blur(10px);
+   border-radius: 10px;
+   z-index: 1000;
+   text-align: center;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+   font-size: 2.5rem; /* Можете использовать vw для адаптивности */
+   margin: 0;
+   text-align: center;
+   color: #ED1C24;
+   font-weight: normal;
+}
+
+h3 {
+   font-size: 2.5rem;
+   margin: 0 auto;
+   color: #ED1C24;
+   font-weight: normal;
+}
+
+hr {
+   margin: 20px auto;
+}
+
+p {
+   letter-spacing: -0.03em;
+   font-size: 1.5rem;
+   margin-right: auto;
+}
+
+.home_illustration {
+   margin-top: 100px;
+   margin-bottom: 2vw;
+   text-align: center;
+   width: 100vw;
+}
+
+.home_illustrationIMG {
+   width: 90vw;
+}
+
+.header_links {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   width: 100%; /* Ширина 100% от родительского контейнера */
+   max-width: 100%; /* Задаем ширину в 100% для полной адаптивности */
+   padding: 10px 0;
+   margin: 0; /* Убираем внешние отступы */
+}
+
+
+.header_link {
+   font-weight: bold;
+   margin: 0 0 0 0;
+}
+
+.subtitle {
+   position: relative; /* Родительский контейнер для абсолютного позиционирования круга */
+   margin-bottom: 10vw;
+   margin-top: 20vw;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#about p {
+   width: 45%; /* Уменьшите ширину текста, чтобы создать пространство для изображения */
+   margin-right: 20px; /* Отступ между текстом и изображением */
+}
+
+.subtitle figcaption {
+   font-size: 1rem;
+}
+
+.text_and_photo {
+   display: flex;
+   justify-content: space-between; /* Размещает текст слева, а изображение справа */
+   align-items: flex-start; /* Выравнивание текста выше изображения */
+}
+
+.my_photo {
+   max-width: 50%; /* Установите максимальную ширину по желанию */
+}
+
+.my_photo img {
+   width: 100%; /* Изображение займет 100% от ширины родителя */
+   height: auto; /* Сохраняет пропорции изображения */
+}
+
+.arrow-down {
+   font-size: 2.5rem;
+   display: block;
+   margin: 0 auto;
+   animation: smoothBounce 3s ease-in-out infinite;
+}
+
+#contact_me {
+   border: none;
+   margin-top: 0;
+   font-size: 2.5rem;
+   color: #ED1C24;
+   font-weight: normal;
+}
+
+.portfolio-container {
+   display: flex;
+   flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
+   justify-content: space-between; /* Размещает элементы с равными отступами */
+}
+
+.portfolioIMG {
+   width: 45%; /* Ширина каждого изображения */
+   margin-bottom: 20px; /* Отступ между рядами */
+}
+
+.contact_link {
+   font-size: 2.5rem;
+   color: #111111;
+   font-weight: normal;
+   text-align: center;
+   flex-direction: column; /* Вертикальное расположение */
+   display: flex;
+}
+
+
+footer {
+   width: 100%;
+   height: 200px;
+   background-color: #111111;
+   display: flex;
+   justify-content: space-between; /* Размещает элементы с равными отступами */
+   align-items: center; /* Центрирует элементы по вертикали */
+   position: relative; /* Устанавливаем позиционирование относительно футера */
+}
+
+.footer_text {
+   color: #fff;
+   margin: 0 15% 0 15%; /* Убираем отступы для заголовков */
+}
+
+.footer_text_center {
+   position: absolute; /* Абсолютное позиционирование для центра */
+   left: 50%; /* Центрируем по горизонтали */
+   transform: translateX(-50%); /* Смещаем на половину ширины элемента для центрирования */
+   color: #fff;
+}
+
+
+
+/* faq */
+.faq-question-span {
+   width: 90%;
+}
+
+.faq-container {
+   margin: auto;
+   background: #fff;
+   border-radius: 5px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   max-width: 800px;
+}
+
+.faq-item {
+   border-left: 4px solid #ED1C24;
+   border-right: 4px solid #ED1C24;
+   border-top: 4px solid #ED1C24;
+   background-clip: padding-box;
+   position: relative;
+   margin-top: -4px;
+}
+
+.faq-item:first-of-type {
+   margin-top: 0;
+}
+
+.faq-item:last-of-type {
+   border-bottom: 4px solid #ED1C24;
+}
+
+.faq-question {
+   font-size: 1.5rem;
+   font-weight: 600;
+   padding-left: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer; /* Добавляем курсор для нажатия */
+   position: relative; /* Для позиционирования border */
+}
+
+.faq-question.active {
+   border-bottom: 4px solid #ED1C24; /* Нижняя граница для вопроса */
+}
+
+.toggle {
+   font-size: 2rem;
+   width: 5vw;
+   height: 5vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-left: 4px solid #ED1C24;
+   background-color: #fff;
+}
+
+.toggle-icon {
+   width: 60%; /* Фиксированная ширина для иконки */
+   height: 60%; /* Фиксированная высота для иконки */
+   object-fit: contain; /* Сохраняет пропорции и не искажает изображение */
+}
+
+.toggle.active {
+   border-bottom: 4px solid #ED1C24; /* Нижняя граница для toggle */
+}
+
+.faq-answer {
+   display: none; /* Скрываем ответ по умолчанию */
+   margin-left: 20px;
+   padding: 0 50px;
+   overflow: hidden; /* Убираем переполнение */
+}
+
+.faq-item.active .faq-answer {
+   display: block; /* Показываем ответ при активном вопросе */
+   animation: slideDown 0.3s ease-out forwards; /* Добавляем анимацию появления */
+}
+
+@keyframes slideDown {
+   from {
+       max-height: 0;
+       opacity: 0;
+   }
+   to {
+       max-height: 1000px; /* Достаточно большое значение для плавного раскрытия */
+       opacity: 1;
+   }
+}
+
+/* faq */
+
+@keyframes smoothBounce {
+   0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+   }
+   40% {
+      transform: translateY(-10px);
+   }
+   60% {
+      transform: translateY(-5px);
+   }
+}
+
+/* Медиа-запросы для улучшения адаптивности */
+@media (max-width: 768px) {
+   h2 {
+      font-size: 2rem;
+   }
+
+   h3 {
+      font-size: 2rem;
+   }
+
+   p {
+      font-size: 1.2rem;
+   }
+
+   .header_link {
+      font-size: 1rem;
+   }
+
+   #contact {
+      font-size: 2rem;
+   }
+
+   .text_and_photo {
+      display: block;
+   }
+
+   #about p {
+      width: 100%; /* Уменьшите ширину текста, чтобы создать пространство для изображения */
+      margin-right: 0; /* Отступ между текстом и изображением */
+   }
+
+   .my_photo {
+      max-width: 100%; /* Установите максимальную ширину по желанию */
+   }
+
+   .faq-question {
+      font-size: 0.86rem;
+   }
+
+   .faq-question {
+      padding-left: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   h2 {
+      font-size: 1.5rem;
+   }
+
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   p {
+      font-size: 1rem;
+   }
+
+   .home_illustration {
+      width: 100%;
+   }
+
+   .header_link {
+      font-size: 0.875rem; /* 0.875rem равен 14pt */
+   }
+
+.arrow-down {
+   font-size: 1.5rem;
+}
+
+   #contact {
+      font-size: 1.5rem;
+   }
+}  
