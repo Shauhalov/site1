@@ -173,10 +173,6 @@ footer {
    position: relative; /* Устанавливаем позиционирование относительно футера */
 }
 
-.footer_text {
-   color: #fff;
-   margin: 0 15% 0 15%; /* Убираем отступы для заголовков */
-}
 
 .footer_text_center {
    position: absolute; /* Абсолютное позиционирование для центра */
