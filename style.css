@@ -323,12 +323,30 @@ footer {
    }
 
    .faq-question {
-      font-size: 0.86rem;
-   }
+      font-size: 1.2rem; /* Уменьшаем размер шрифта для вопросов */
+      padding-left: 10px; /* Уменьшаем отступ слева */
+  }
 
-   .faq-question {
-      padding-left: 10px;
-   }
+  .toggle {
+      font-size: 1.5rem; /* Уменьшаем размер иконки */
+      width: 10vw; /* Ширина иконки */
+      height: 10vw; /* Высота иконки */
+  }
+
+  .faq-answer {
+      margin-left: 10px; /* Уменьшаем отступ слева для ответов */
+      padding: 0 20px; /* Уменьшаем отступ по бокам */
+  }
+
+  .faq-container {
+      padding: 15px; /* Уменьшаем отступ внутри контейнера */
+  }
+
+  .faq-item {
+      border-left: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
+      border-right: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
+      border-top: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
+  }
 }
 
 @media (max-width: 480px) {
