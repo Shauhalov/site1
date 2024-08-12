@@ -127,6 +127,11 @@ p {
    height: auto; /* Сохраняет пропорции изображения */
 }
 
+.about_me_text {
+   width: 70%;
+   margin-right: 70px;
+  }
+
 .arrow-down {
    font-size: 2.5rem;
    display: block;
@@ -181,7 +186,10 @@ footer {
    color: #fff;
 }
 
-
+.logo-icon {
+   width: 20px;
+   height: 20px;
+}
 
 /* faq */
 .faq-question-span {
@@ -302,7 +310,7 @@ footer {
    }
 
    .header_link {
-      font-size: 0.9rem;
+      font-size: 0.75rem !important;
    }
 
    #contact {
@@ -359,6 +367,16 @@ footer {
   .faq-item:last-of-type {
    border-bottom: 2px solid #ED1C24;
 } 
+
+   .about_me_text {
+      margin-bottom: 30px;
+      width: 100%;
+   }
+
+   .contact_link {
+      font-size: 1.7rem;
+      color: #111111;
+   }
 }
 
 @media (max-width: 480px) {
@@ -388,5 +406,9 @@ footer {
 
    #contact {
       font-size: 1.5rem;
+   }
+
+   .header_link {
+      font-size: 0.6rem !important;
    }
 }  
