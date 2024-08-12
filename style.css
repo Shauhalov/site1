@@ -322,31 +322,43 @@ footer {
       max-width: 100%; /* Установите максимальную ширину по желанию */
    }
 
-   .faq-question {
-      font-size: 1.2rem; /* Уменьшаем размер шрифта для вопросов */
+   .faq-container {
+      padding: 10px; /* Уменьшаем отступы */
+  }
+
+  .faq-item {
+      border-left: none; /* Убираем боковые границы */
+      border-right: none;
+      
+      border-top: 2px solid #ED1C24; /* Уменьшаем толщину верхней границы */
+      margin-top: 0; /* Убираем отрицательный верхний отступ */
+  }
+
+  .faq-question {
+      font-size: 1.2rem; /* Уменьшаем размер шрифта */
       padding-left: 10px; /* Уменьшаем отступ слева */
   }
 
   .toggle {
       font-size: 1.5rem; /* Уменьшаем размер иконки */
-      width: 10vw; /* Ширина иконки */
-      height: 10vw; /* Высота иконки */
+      width: 10vw; /* Увеличиваем ширину для удобства нажатия */
+      height: 10vw; /* Увеличиваем высоту для удобства нажатия */
+      border-left: 0px solid #ED1C24;
   }
 
   .faq-answer {
-      margin-left: 10px; /* Уменьшаем отступ слева для ответов */
-      padding: 0 20px; /* Уменьшаем отступ по бокам */
+      margin-left: 0; /* Убираем левый отступ */
+      padding: 10px; /* Увеличиваем внутренние отступы */
   }
 
-  .faq-container {
-      padding: 15px; /* Уменьшаем отступ внутри контейнера */
+  .toggle-icon {
+      width: 50%; /* Уменьшаем размер иконки */
+      height: 50%;
   }
 
-  .faq-item {
-      border-left: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
-      border-right: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
-      border-top: 2px solid #ED1C24; /* Уменьшаем толщину бордюра */
-  }
+  .faq-item:last-of-type {
+   border-bottom: 2px solid #ED1C24;
+} 
 }
 
 @media (max-width: 480px) {
